@@ -10,7 +10,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 
 <head>
-<title>Memoir a personal Category Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<title>My portofolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
 <meta name="keywords" content="Memoir a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -68,7 +68,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-7 ilofggbaninf">
 			<h2>Anish Thapa</h2>
 			<h4>Im currently studying IT at Herald college</h4>
-			<p class="ilofggbann">I am very passionate in technology.technology is to solve the problems of peoples so  by soving the problems it makes me smile</p>
+			<p class="ilofggbann">I am very passionate in technology.Trying to learn new technology  </p>
 			
 				<div class="w3l_but">
                        <a href="#projects"  class="btn btn-lg btn-primary btn-block page-scroll">PROJECTS</a>
@@ -159,7 +159,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<p></p>
 				</div>
 				<div class="right1">
-					<h4 class="w3l_eduh">Batchelors Degree</h4>
+					<h4 class="w3l_eduh">Bachelors Degree</h4>
 					<p class="w3l_edup">Herald College kathmandu - 2019 to 2022</p>
 				</div>
 				<div class="right1">
@@ -186,7 +186,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <div class="col-md-6 w3layouts">
 <h2>Create your websites</h2>
-<P class="servghjrfgh">You can have your websites with django framework </p>
+<P class="servghjrfgh">You can have your websites with any framework </p>
 <div class="col-md-6 servghjrfghvice">
 
 <h4>Software development</h4>
@@ -295,7 +295,7 @@ List of Common Machine Learning Algorithms :
 				</div>
 				<div class="content">
 					<div>
-						<div class="dummy-img dummy-img-1"><img src="images/g1.jpg" alt="wanderlust"></div>
+						<div class="dummy-img dummy-img-1"><img src="{% static 'images/g1.jpg' %}" alt="wanderlust"></div>
 						<p class="dummy-text aitsheadingw3">HTML</p>
 						<p class="dummy-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
 					</div>
@@ -356,22 +356,26 @@ List of Common Machine Learning Algorithms :
 <div class="contact" id="contact">
 <div class="container">
 <h3>CONTACT ME</h3>
-<div class="w3l_l">
- <form  class="" method="post">
-   {% csrf_token %}
-  <input name="name" type="name" class="form-control" placeholder="Name">
-</div>
-<div class="w3l_r">
-  <input name="email" type="email" class="form-control" placeholder="Email">
-</div>
-<div class="clearfix"></div>
-<div class="w3l_t">
-  <input name="message" type="message" class="form-control" placeholder="message">
-</div>
-<div class="w3l_butt">
-<button type="submit" class="btn btn-primary"  placeholder="Send"> Send </button>
-</div>
-</form>
+        <div class="card-body ">
+                            <form class="" method="post">
+                                {% csrf_token %}
+                                <div class="form-group ">
+                                    <input name="name" type="name" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input name="email" type="email" class="form-control" placeholder="Email">
+                                </div>
+
+
+                                <div class="form-group">
+                                    <textarea name="subject" class="form-control" rows="5"
+                                        placeholder="Subject"></textarea>
+                                </div>
+                                <div class="container-contact100-form-btn">
+                                    <button class="contact100-form-btn">
+                                        Send Message
+                                    </button>
+                            </form>
 <div class="wrapper">
 <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline"> 
 <li> <a href="https://www.facebook.com/profile.php?id=100005930955083"><i class="fa fa-facebook"></i></a></li> 
@@ -387,7 +391,7 @@ List of Common Machine Learning Algorithms :
 <!-- /Contact Us -->
 <div class="footer">
 <div class="container">
- <p>&copy; Anish Thapa All Rights Reserved | Design by <a href=Anish target="blank"></a><Anish Thapa/p>
+ <p>&copy; Anish Thapa All Rights Reserved <a href=Anish target="blank"></a><Anish Thapa/p>
  </div>
 </div>
 <script src="js/jquery.min.js"></script>
